@@ -1,16 +1,115 @@
-# React + Vite
+🍔 Swiggy Clone – React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based food ordering application inspired by Swiggy.
+This project demonstrates core React concepts such as components, props, state management, routing, conditional rendering, and reusable UI components.
 
-Currently, two official plugins are available:
+📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application allows users to:
 
-## React Compiler
+Browse restaurants
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+View restaurant menus
 
-## Expanding the ESLint configuration
+Add items to a cart
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Navigate between pages like Home, About, Contact, and Cart
+
+Experience a clean and reusable component-based UI
+
+The project is built mainly for learning and practicing React fundamentals.
+
+🧩 Components Used
+🔹 Header.jsx
+
+Displays the application header
+
+Contains navigation links (Home, About, Contact, Cart)
+
+Acts as a common layout component visible on all pages
+
+🔹 Body.jsx
+
+Main container for rendering core content
+
+Responsible for displaying restaurant listings
+
+Uses reusable restaurant card components
+
+🔹 Home.jsx
+
+Acts as the landing page
+
+Integrates Body and other UI sections
+
+Displays the list of available restaurants
+
+🔹 ResturantCard.jsx
+
+Reusable card component for each restaurant
+
+Displays:
+
+Restaurant name
+
+Cuisine type
+
+Rating
+
+Delivery details
+
+Used multiple times to render restaurant lists
+
+🔹 RestuarentMenu.jsx
+
+Displays the selected restaurant’s menu
+
+Shows food items available in a restaurant
+
+Designed to work with dynamic route parameters
+
+🔹 Cart.jsx
+
+Displays items added to the cart
+
+Central place to view selected food items
+
+Prepared for future enhancements like quantity and total price
+
+🔹 Theme.jsx
+
+Handles UI theme-related logic
+
+Helps in maintaining consistent styling
+
+Can be extended for dark/light mode
+
+🔹 About.jsx
+
+Provides information about the application
+
+Explains the purpose of the project
+
+🔹 Contact.jsx
+
+Contact information or support-related content
+
+Simple static page component
+
+🔹 NotFound.jsx
+
+Displays a 404-style page
+
+Shown when a user navigates to an invalid route
+
+🛠️ Technologies Used
+
+React.js
+
+JavaScript (ES6+)
+
+JSX
+
+CSS / Tailwind CSS
+
+React Router DOM
